@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*
+ azul escuro: #0B3A40
+ azul claro: #39BFBF
+*/
+html {
+    width: 90%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to top, #0B3A40, #39BFBF);
+    font: normal 15pt Arial;
+    width: 100%;
+    height: 90%;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
+
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
