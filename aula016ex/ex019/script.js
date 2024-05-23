@@ -31,3 +31,36 @@ function adicionar() {
         alert('[ERRO] valor inválido ou já adicionado.')
     }
 }
+
+function finalizar() {
+    if(valores.length == 0){
+        alert('[ERRO] Adicione valores antes de finalizar!')
+    } else {
+        let total = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+
+       for (let pos in valores) {
+             soma += valores[pos]
+
+            if(valores[pos] > maior)
+                maior = valores[pos]
+            if(valores[pos] < menor)
+                menor = valores[pos]
+            
+            media = soma / total
+       }
+
+       
+
+        res.innerHTML = ""
+        res.innerHTML += `<p>Ao todos, temos ${total} números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}</p>`
+        res.innerHTML += `<p>O menor valor informado foi ${menor}</p>`
+        res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
+        res.innerHTML += `<p>A média dos valores informados é ${media}</p>`
+    }
+    
+}
