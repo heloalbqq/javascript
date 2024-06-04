@@ -8,6 +8,7 @@
     color: #333;
     box-sizing: border-box;
 }
+
 body {
     background: linear-gradient(45deg, #1eee94, #551fbd);
     height: 100vh;
